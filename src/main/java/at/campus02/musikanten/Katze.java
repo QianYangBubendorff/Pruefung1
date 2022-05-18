@@ -27,12 +27,12 @@ public class Katze extends Musikant{
 	}
 
 	@Override
-	public double speileMusik() {
+	public double spieleMusik() {
 		return instrument.getLautstaerke();
 	}
 
 	@Override
 	public String toString() {
-		return "Katze "+kratzKraft+": Verscheucht: "+ verscheucheRaeuber()+", Musiziert: "+speileMusik();
+		return "Katze "+kratzKraft+": Verscheucht: "+ verscheucheRaeuber()+", Musiziert: "+spieleMusik();
 	}
 }

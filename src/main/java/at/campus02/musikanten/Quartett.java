@@ -31,7 +31,7 @@ public class Quartett {
 	public double durchschnittlicheLautstaerke()
 	{	double sumMusic = 0;
 		for(Musikant m: musikants){
-			sumMusic+= m.speileMusik();
+			sumMusic+= m.spieleMusik();
 		}
 		return sumMusic/musikants.size();
 	}
@@ -40,7 +40,7 @@ public class Quartett {
 	{
 		ArrayList<Musikant> musikantList = new ArrayList<>();
 		for(Musikant m: musikants){
-			if(m.speileMusik()>=von && m.speileMusik() <=bis){
+			if(m.spieleMusik()>=von && m.spieleMusik() <=bis){
 				musikantList.add(m);
 			}
 		}
@@ -53,7 +53,7 @@ public class Quartett {
 		HashMap<Integer, Integer> map = new HashMap<>();
 		for(Musikant m: musikants){
 			if(!map.containsKey(m.anzahlBeine)){
-				map.put(m.anzahlBeine, count);
+				map.put(m.anzahlBeine, 1);
 			}else{
 				map.put(m.anzahlBeine, ++count);
 			}

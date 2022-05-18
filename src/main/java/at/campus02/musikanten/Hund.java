@@ -20,12 +20,12 @@ public class Hund extends Musikant{
 	}
 
 	@Override
-	public double speileMusik() {
+	public double spieleMusik() {
 		return (instrument.getLautstaerke()+bellLautstaerke)/2;
 	}
 
 	@Override
 	public String toString() {
-		return "Hund "+bellLautstaerke+": Verscheucht: "+ verscheucheRaeuber()+", Musiziert: "+speileMusik();
+		return "Hund "+bellLautstaerke+": Verscheucht: "+ verscheucheRaeuber()+", Musiziert: "+spieleMusik();
 	}
 }

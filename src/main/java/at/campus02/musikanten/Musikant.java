@@ -18,10 +18,10 @@ public abstract class Musikant {
     }
 
     public abstract int verscheucheRaeuber();
-    public abstract double speileMusik();
+    public abstract double spieleMusik();
 
     @Override
     public String toString() {
-        return "Verscheucht: "+verscheucheRaeuber()+", Musiziert: "+speileMusik();
+        return "Verscheucht: "+verscheucheRaeuber()+", Musiziert: "+spieleMusik();
     }
 }

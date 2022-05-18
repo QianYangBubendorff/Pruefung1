@@ -28,13 +28,13 @@ public class Hahn extends Musikant {
 	}
 
 	@Override
-	public double speileMusik() {
+	public double spieleMusik() {
 		return (instrument.getLautstaerke()+2)/flugWeite;
 	}
 
 	@Override
 	public String toString() {
-		return "Hahn "+flugWeite+": Verscheucht: "+ verscheucheRaeuber()+", Musiziert: "+speileMusik();
+		return "Hahn "+flugWeite+": Verscheucht: "+ verscheucheRaeuber()+", Musiziert: "+spieleMusik();
 	}
 
 

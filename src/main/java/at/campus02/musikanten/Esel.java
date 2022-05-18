@@ -20,12 +20,12 @@ public class Esel extends Musikant {
 	}
 
 	@Override
-	public double speileMusik() {
+	public double spieleMusik() {
 		return instrument.getLautstaerke();
 	}
 
 	@Override
 	public String toString() {
-		return "Esel "+trittkraft+": Verscheucht: "+ verscheucheRaeuber()+", Musiziert: "+speileMusik();
+		return "Esel "+trittkraft+": Verscheucht: "+ verscheucheRaeuber()+", Musiziert: "+spieleMusik();
 	}
 }
